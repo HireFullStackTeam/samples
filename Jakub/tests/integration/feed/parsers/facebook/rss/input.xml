@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+	<channel>
+		<title>Dřevěný motýlek a osobité módní doplňky z Beskyd | BeWooden</title>
+		<link>https://www.bewooden.cz</link>
+		<description>Ruční zpracování, doživotní záruka, kvalita a styl - to je BeWooden. Výrobce dřevěných módních doplňků z podhůří Beskyd. Už víte, čím zpestříte svůj outfit?</description>
+		<item>
+			<g:id>261</g:id>
+			<g:title>Gentle Rose</g:title>
+			<g:description>Motýlek není jen doplňkem vaše outfitu, ale také vaší filosofie a životního postoje. Motýlkem tak můžete ukázat, kým jste nebo kým zrovna toužíte být.  Gentle Rose je pro všechny srdcaře.  Dejte najevo, že jste za každé situace sám sebou. Děláte vše, co vás baví, a děláte to s vášní ...</g:description>
+			<g:link>https://www.bewooden.cz/katalog/pansky-motylek-1/jedinecny-dreveny-motylek-2/gentle-rose-261/</g:link>
+			<g:image_link>https://www.bewooden.cz/images/vyrobek/gentle-serenity-261.jpg</g:image_link>
+			
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>1090 CZK</g:price>
+			
+			<g:shipping>
+				<g:country>CZ</g:country>
+				<g:service>Balík do ruky</g:service>
+				<g:price>80 CZK</g:price>
+			</g:shipping>
+			<g:shipping>
+				<g:country>SK</g:country>
+				<g:service>Balík do ruky na Slovensko</g:service>
+				<g:price>120 CZK</g:price>
+			</g:shipping>
+			<g:shipping>
+				<g:country>CZ</g:country>
+				<g:service>Česká republika</g:service>
+				<g:price>70 CZK</g:price>
+			</g:shipping>
+			<g:shipping>
+				<g:country>CZ</g:country>
+				<g:service>Osobní odběr</g:service>
+				<g:price>0 CZK</g:price>
+			</g:shipping>
+			<g:shipping>
+				<g:country>SK</g:country>
+				<g:service>Slovensko</g:service>
+				<g:price>120 CZK</g:price>
+			</g:shipping>
+			<g:google_product_category>Jedinečný dřevěný motýlek</g:google_product_category>
+			<g:mpn>MBT128</g:mpn>
+			
+			<g:identifier_exists>FALSE</g:identifier_exists>
+			<g:product_type>Jedinečný dřevěný motýlek</g:product_type>
+		</item>
+        <item>
+            <g:id>255</g:id>
+            <g:title>Stella</g:title>
+            <g:description>Motýlek Stella je vznešený, velkolepý, ale přesto dovádivý a dobrodružný. Stejně jako vaše jedinečná povaha.  Někdy toužíte být opravdovým gentlemanem v obleku, třeba ve svatební den nebo v jiných významných chvílích vašeho života.  Někdy však zkrátka chcete rozbít zaběhnutá pravidla, probudit v sobě kousek rebela. Třeba na koncertě, schůzce ...</g:description>
+            <g:link>https://www.bewooden.cz/katalog/pansky-motylek-1/jedinecny-dreveny-motylek-2/stella-255/</g:link>
+            <g:image_link>https://www.bewooden.cz/images/vyrobek/stella-255.jpg</g:image_link>
+
+            <g:condition>new</g:condition>
+            <g:availability>in stock</g:availability>
+            <g:price>1890 CZK</g:price>
+
+            <g:shipping>
+                <g:country>CZ</g:country>
+                <g:service>Balík do ruky</g:service>
+                <g:price>80 CZK</g:price>
+            </g:shipping>
+            <g:shipping>
+                <g:country>SK</g:country>
+                <g:service>Balík do ruky na Slovensko</g:service>
+                <g:price>120 CZK</g:price>
+            </g:shipping>
+            <g:shipping>
+                <g:country>CZ</g:country>
+                <g:service>Česká republika</g:service>
+                <g:price>70 CZK</g:price>
+            </g:shipping>
+            <g:shipping>
+                <g:country>CZ</g:country>
+                <g:service>Osobní odběr</g:service>
+                <g:price>0 CZK</g:price>
+            </g:shipping>
+            <g:shipping>
+                <g:country>SK</g:country>
+                <g:service>Slovensko</g:service>
+                <g:price>120 CZK</g:price>
+            </g:shipping>
+            <g:google_product_category>Jedinečný dřevěný motýlek</g:google_product_category>
+            <g:mpn>MBT126</g:mpn>
+
+            <g:identifier_exists>FALSE</g:identifier_exists>
+            <g:product_type>Jedinečný dřevěný motýlek</g:product_type>
+        </item>
+	</channel>
+</rss>
