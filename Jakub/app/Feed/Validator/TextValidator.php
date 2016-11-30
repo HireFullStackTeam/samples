@@ -77,8 +77,7 @@ class TextValidator
 			$rightLineNumber = $key + 2;
 
 			if ($headerCount !== $lineCount) {
-				// throw new Exception('Different number of items ['.$lineCount.'] which differ from headers ['.$headerCount.'] on line ' . $rightLineNumber . '.');
-				var_dump('Different number of items [' . $lineCount . '] which differ from headers [' . $headerCount . '] on line ' . $rightLineNumber . '.');
+				 throw new Exception('Different number of items ['.$lineCount.'] which differ from headers ['.$headerCount.'] on line ' . $rightLineNumber . '.');
 			}
 		}
 
