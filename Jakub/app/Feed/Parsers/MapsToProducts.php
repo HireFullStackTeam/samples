@@ -68,7 +68,7 @@ trait MapsToProducts
 	protected function validateHasMapper()
 	{
 		if (is_null($this->mapper)) {
-			throw new LogicException('You have to register a mapper.'); // TODO make custom exception
+			throw new LogicException('You have to register a mapper.');
 		}
 
 		return $this;
@@ -83,7 +83,7 @@ trait MapsToProducts
 	protected function validateItemsAreAlreadyParsed()
 	{
 		if (empty($this->items) === true) {
-			throw new Exception('You have to parse a file first.'); // TODO make custom exception
+			throw new Exception('You have to parse a file first.');
 		}
 
 		return $this;

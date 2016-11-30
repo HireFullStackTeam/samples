@@ -19,10 +19,8 @@ class GalleryController extends ApiController
 	/**
 	 * @return Response
 	 */
-	public function index() // TODO for the current user
+	public function index()
 	{
-		Auth::loginUsingId(1); // TODO temporary
-
 		return $this->response->collection(
 			Auth::user()->gallery, new ImageTransformer
 		);
@@ -34,12 +32,8 @@ class GalleryController extends ApiController
 	 * @param Request $request
 	 * @return Response
 	 */
-	public function store(Request $request) // TODO UploadImageableRequest $request
+	public function store(Request $request)
 	{
-		Auth::loginUsingId(1); // TODO temporary login as a user (until JWT)
-
-		// TODO validate project has to exist
-
 		$collection = App::interact(UploadImageableFile::class, [
 			$request->all(), Auth::user(), $this->project($request),
 		]);

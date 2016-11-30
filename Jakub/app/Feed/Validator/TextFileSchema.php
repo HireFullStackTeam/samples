@@ -24,7 +24,6 @@ class TextFileSchema
 
 	protected function __construct()
 	{
-		// TODO encapsulate
 		$this->content = json_decode(File::get(storage_path('app/feed/schema/string.json')), true);
 	}
 

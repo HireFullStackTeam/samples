@@ -32,6 +32,6 @@ class MongoProductRepository implements ProductRepository
 	 */
 	public function createFromCollection($products)
 	{
-		// TODO
+		//
 	}
 }

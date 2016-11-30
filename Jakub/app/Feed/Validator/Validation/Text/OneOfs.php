@@ -26,8 +26,6 @@ class OneOfs implements Validation
 			}
 		}
 
-		//	var_dump('Missing required ' . $name . ' field.'); // TODO
-
 		return $found;
 	}
 

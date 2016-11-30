@@ -13,35 +13,7 @@ use App\Feed\Validator\Validation\Text\RequiredFields;
 class TextValidator
 {
 
-	/*
-		1. Projít hlavičku zjisti jestli sedí ze schématem
-		existence a počet povinné položky
-		počet u nepovinné položky
-		existence povinné volitelné položky a neexistence vázaných položek
-		! v příkladu jsou všechny v hlavičce, ale hodnoty jsou jen u jedné,
-		chtělo by to více příkladů, je-li tomu tak
-
-		Při chybě, CSV/TSV neodpovídá schématu, nelze dál pokračovat (hard error)
-
-		2. Průchod řádků
-		počet položek na řádku, neodpovídá hlavičce, chybný CSV/TSV formát (hard error)
-
-
-		3. Průchod položek řádku
-		položka má správný formát, porovnání regulérním výrazem
-		! "size" není ve facebook secifikaci, ale je v ukázce
-
-		poznámka: testovat existenci cílového obrázku?
-
-		Chyba formátu se může vyskytnout u všech položek, tedy chyba formátování při exportu do CSV,
-	    nebo jen u jedné chybná data. Pokud je to ojedinělá chyba může být řešením vynechání položky.
-
-	*/
-
-
-
 	/**
-	 * TODO
 	 * @var array
 	 */
 	protected $data;
@@ -81,8 +53,6 @@ class TextValidator
 	{
 		$header = $this->reader->createFromPath($path, $delimiter)->fetchOne();
 
-		// $this->data = $reader->setOffset(1)->fetchAll(); TODO
-
 		foreach ($this->validations as $validation) {
 			if ((new $validation)->validate($header) === false) {
 				return false;
@@ -95,8 +65,6 @@ class TextValidator
 
 
 	/**
-	 * TODO should be usable with xml files too
-	 *
 	 * @return $this
 	 */
 	protected function validateLineFieldsCount()
@@ -120,8 +88,6 @@ class TextValidator
 
 
 	/**
-	 * TODO should be usable with xml files too
-	 *
 	 * @return $this
 	 */
 	protected function validateLine()
@@ -175,8 +141,6 @@ class TextValidator
 
 
 	/**
-	 * TODO
-	 *
 	 * @param array $oneOfs
 	 * @return array
 	 */

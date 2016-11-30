@@ -34,8 +34,6 @@ class ComponentTransformer extends TransformerAbstract
 	 */
 	public function transform(Component $component)
 	{
-		// TODO component visibility is null, why?
-
 		return [
 			'id'                 => (int) $component->id,
 			'name'               => (string) $component->name,

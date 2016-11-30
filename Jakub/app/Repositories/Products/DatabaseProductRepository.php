@@ -34,8 +34,6 @@ class DatabaseProductRepository implements ProductRepository
 	 */
 	public function createFromCollection($products)
 	{
-		// TODO add project_id
-
 		$products = $products instanceof Collection
 			? $products->map(function ($product) {
 				return $product;
@@ -51,8 +49,6 @@ class DatabaseProductRepository implements ProductRepository
 			return array_merge($product, $dates);
 		}, $products));
 
-
-		// TODO returns product collection for feed test
 
 		if ($inserted === true) {
 			return collect($products);

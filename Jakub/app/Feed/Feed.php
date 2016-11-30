@@ -50,7 +50,6 @@ class Feed implements Contract
 			);
 		}
 
-		return false; // TODO temporary return false for tests
-		// todo throw an exceptions - unresolved file format
+		return false;
 	}
 }

@@ -12,8 +12,6 @@ use Tests\TestCase;
 class FeedTest extends TestCase
 {
 
-	// TODO prověřit "shipping_weight", "identifier_exists"
-
 	/**
 	 * Content of files should be same
 	 * Checked with https://business.facebook.com/ads/product_feed/debug
