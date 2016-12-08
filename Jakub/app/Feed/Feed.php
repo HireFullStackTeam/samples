@@ -2,9 +2,11 @@
 
 namespace App\Feed;
 
+use App\Contracts\Feed\Factory\FileFactory;
 use App\Contracts\Feed\Factory\ParserFactory;
 use App\Contracts\Feed\Feed as Contract;
 use App\Contracts\Repositories\ProductRepository;
+use App\Repositories\Products\ProductBenchmarkRepository;
 
 
 
@@ -14,25 +16,33 @@ class Feed implements Contract
 	/**
 	 * @var ParserFactory
 	 */
-	protected $factory;
+	protected $parserFactory;
 
 	/**
 	 * @var ProductRepository
 	 */
 	protected $products;
 
+	/**
+	 * @var FileFactory
+	 */
+	protected $fileFactory;
+
 
 
 	/**
-	 * @param ParserFactory     $factory
+	 * @param ParserFactory     $parserFactory
 	 * @param ProductRepository $products
+	 * @param FileFactory       $fileFactory
 	 */
 	public function __construct(
-		ParserFactory $factory,
-		ProductRepository $products
+		ParserFactory $parserFactory,
+		ProductRepository $products,
+		FileFactory $fileFactory
 	) {
-		$this->factory = $factory;
+		$this->parserFactory = $parserFactory;
 		$this->products = $products;
+		$this->fileFactory = $fileFactory;
 	}
 
 
@@ -42,10 +52,12 @@ class Feed implements Contract
 	 */
 	public function handle($file)
 	{
-		$file = new File($file);
+		$file = $this->fileFactory->create($file);
 
-		if ($parser = $this->factory->create($file)) {
-			return $this->products->createFromCollection(
+		$repository = new ProductBenchmarkRepository($this->products);
+
+		if ($parser = $this->parserFactory->create($file)) {
+			return $repository->createFromCollection(
 				$parser->mapToProductsFrom($file)
 			);
 		}
